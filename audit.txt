@@ -1,0 +1,86 @@
+up to date, audited 676 packages in 3s
+
+106 packages are looking for funding
+  run `npm fund` for details
+
+# npm audit report
+
+@coinbase/wallet-sdk  >=4.0 <4.3.0
+Severity: high
+Unknown vulnerability in Coinbase Wallet SDK - https://github.com/advisories/GHSA-8rgj-285w-qcq4
+fix available via `npm audit fix --force`
+Will install @thirdweb-dev/sdk@4.0.73, which is a breaking change
+node_modules/@coinbase/wallet-sdk
+  thirdweb  1.0.0-alpha-000a1a721-20240216071747 - 5.105.7
+  Depends on vulnerable versions of @coinbase/wallet-sdk
+  Depends on vulnerable versions of @walletconnect/ethereum-provider
+  Depends on vulnerable versions of viem
+  node_modules/@thirdweb-dev/sdk/node_modules/thirdweb
+    @thirdweb-dev/sdk  <=0.0.0-dev-f95024147f012f9b752b6cd2215199dca870c39d-20240511003159 || >=4.0.74-nightly-0bce5350946d0ce231a65dbad2493d1fbe0c1376-20240501084254
+    Depends on vulnerable versions of thirdweb
+    node_modules/@thirdweb-dev/sdk
+
+fast-redact  *
+fast-redact vulnerable to prototype pollution - https://github.com/advisories/GHSA-ffrw-9mx8-89p8
+fix available via `npm audit fix --force`
+Will install @thirdweb-dev/sdk@4.0.73, which is a breaking change
+node_modules/fast-redact
+  pino  5.0.0-rc.1 - 9.11.0
+  Depends on vulnerable versions of fast-redact
+  node_modules/@walletconnect/ethereum-provider/node_modules/pino
+  node_modules/@walletconnect/types/node_modules/pino
+  node_modules/@walletconnect/universal-provider/node_modules/pino
+    @walletconnect/logger  <=2.1.3
+    Depends on vulnerable versions of pino
+    node_modules/@walletconnect/ethereum-provider/node_modules/@walletconnect/logger
+    node_modules/@walletconnect/types/node_modules/@walletconnect/logger
+    node_modules/@walletconnect/universal-provider/node_modules/@walletconnect/logger
+      @walletconnect/core  2.0.0-2.0.0-beta.102 - 2.22.2
+      Depends on vulnerable versions of @walletconnect/logger
+      Depends on vulnerable versions of @walletconnect/types
+      Depends on vulnerable versions of @walletconnect/utils
+      node_modules/@walletconnect/ethereum-provider/node_modules/@walletconnect/core
+      node_modules/@walletconnect/universal-provider/node_modules/@walletconnect/core
+      @walletconnect/sign-client  <=2.22.2
+      Depends on vulnerable versions of @walletconnect/core
+      Depends on vulnerable versions of @walletconnect/logger
+      Depends on vulnerable versions of @walletconnect/types
+      Depends on vulnerable versions of @walletconnect/utils
+      node_modules/@walletconnect/ethereum-provider/node_modules/@walletconnect/sign-client
+      node_modules/@walletconnect/universal-provider/node_modules/@walletconnect/sign-client
+        @walletconnect/ethereum-provider  2.0.0-2.0.0-beta.102 - 2.22.2
+        Depends on vulnerable versions of @walletconnect/sign-client
+        Depends on vulnerable versions of @walletconnect/types
+        Depends on vulnerable versions of @walletconnect/universal-provider
+        Depends on vulnerable versions of @walletconnect/utils
+        node_modules/@walletconnect/ethereum-provider
+        @walletconnect/universal-provider  <=2.22.2
+        Depends on vulnerable versions of @walletconnect/logger
+        Depends on vulnerable versions of @walletconnect/sign-client
+        Depends on vulnerable versions of @walletconnect/types
+        Depends on vulnerable versions of @walletconnect/utils
+        node_modules/@walletconnect/universal-provider
+      @walletconnect/types  2.1.2-eaa4818c - 2.22.2
+      Depends on vulnerable versions of @walletconnect/logger
+      node_modules/@walletconnect/types
+        @walletconnect/utils  2.1.2-eaa4818c - 2.22.2
+        Depends on vulnerable versions of @walletconnect/types
+        node_modules/@walletconnect/utils
+
+ws  8.0.0 - 8.17.0
+Severity: high
+ws affected by a DoS when handling a request with many HTTP headers - https://github.com/advisories/GHSA-3h5v-q93c-6h6q
+fix available via `npm audit fix --force`
+Will install @thirdweb-dev/sdk@4.0.73, which is a breaking change
+node_modules/@thirdweb-dev/sdk/node_modules/ws
+  viem  <=0.0.0-wagmiv2-20230628182101 || 0.2.2 - 2.15.0
+  Depends on vulnerable versions of ws
+  node_modules/@thirdweb-dev/sdk/node_modules/viem
+
+14 vulnerabilities (9 low, 5 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
